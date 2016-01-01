@@ -1,0 +1,272 @@
+//##############################################################################
+// MODAL
+
+.cms-admin-modal,
+.cms_modal-window {
+    background: $white;
+    .module {
+        h2 {
+            font-size: $font-size-large !important;
+        }
+    }
+    &.dashboard {
+        #content-related {
+            padding-top: 30px !important;
+        }
+        #content {
+            margin-top: 74px !important;
+        }
+    }
+}
+.popup,
+.cms-admin-modal,
+.cms_modal-window {
+    #container .breadcrumbs + .messagelist + #content,
+    #container .breadcrumbs + #content {
+       margin-left: 20px !important;
+    }
+    &.app-aldryn_bootstrap3 .filerFile .filerClearer {
+        // make sure that file clear button has the correct size #140
+        width: 36px !important;
+        height: 36px !important;
+    }
+    background-color: $white;
+    form {
+        padding: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+        box-shadow: none;
+        fieldset {
+            width: 100%;
+        }
+        // resets checkbox row margin and padding in modal window because of wrapping border #188
+        .checkbox-row {
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px !important;
+        }
+    }
+    .calendarbox table {
+        td {
+            padding: 0 !important;
+        }
+    }
+    &.change-list {
+        #changelist {
+            &.filtered {
+                // make sure that changelist form is floated left next to filter #238
+                #changelist-form {
+                    float: left;
+                    width: calc(100% - #{$filtered-changelist-margin}) !important;
+                    .results {
+                        margin-right: 0 !important
+                    }
+                    #result_list tbody th,
+                    #result_list tbody td {
+                        height: auto;
+                    }
+                }
+            }
+            #changelist-filter {
+                // removes background color if there is a white background not as on dashboard gray
+                background: none !important;
+            }
+            #changelist-form > input + .results {
+                clear: both;
+            }
+        }
+        #result_list {
+            tbody td,
+            tbody th {
+                height: 41px;
+            }
+        }
+    }
+    // resets table styles in modal window #189
+    table {
+        margin-left: 0;
+        box-shadow: none !important;
+        td > select {
+           width: auto !important;
+        }
+    }
+    input[type=text],
+    input[type=password],
+    .vURLField,
+    .vTextField,
+    textarea,
+    select,
+    .select2-container,
+    .sortedm2m-container,
+    form .cke,
+    .field-image {
+        max-width: inherit !important;
+        box-sizing: border-box;
+    }
+    #container {
+        min-width: inherit !important;
+    }
+    #content,
+    &.filebrowser #content {
+        margin: 20px 20px 0 !important;
+    }
+    #content .submit-row {
+        margin: 20px -20px 0 !important;
+        padding: 20px 20px !important;
+    }
+    .form-row {
+        padding-left: 0;
+        padding-right: 0;
+        .btn-group-context label {
+            margin-top: 0 !important;
+            margin-bottom: 5px;
+            &.active {
+                margin-top: -1px !important;
+                margin-bottom: 4px;
+            }
+        }
+        &.field-enable_registration,
+        &.field-registration_deadline_at,
+        &.field-is_published,
+        &.field-publish_at {
+             .field-box {
+                float: none;
+                margin-left: 0 !important;
+                margin-top: 20px;
+            }
+        }
+        .field-box {
+            float: left;
+            margin-right: 20px !important;
+            margin-top: 0;
+            &.field-registration_deadline_at {
+                margin-right: 0 !important;
+            }
+        }
+    }
+    // resets column width on bootstrap row plugin #59
+    .bootstrap3-column {
+        .form-row {
+            overflow: hidden;
+            padding: 14px 0 10px;
+            border-bottom: solid 1px $gray-lighter;
+            &.field-create {
+                input {
+                    width: 70px !important;
+                }
+                label {
+                    display: inline-block;
+                    float: left;
+                    width: 160px !important;
+                }
+            }
+            .field-box {
+                label {
+                    display: inline-block;
+                    float: left;
+                    width: 70px !important;
+                }
+                input {
+                    width: auto !important;
+                }
+                input[type="number"] {
+                    width: 60px !important;
+                }
+            }
+        }
+        .module {
+            margin-bottom: 20px;
+        }
+    }
+    .inline-group {
+        overflow: auto;
+        .module {
+            overflow: visible;
+            width: 100%;
+        }
+        .field-user,
+        .field-group {
+            min-width: 215px;
+        }
+    }
+    &.delete-confirmation {
+        #container .breadcrumbs + .messagelist + #content,
+        #container .breadcrumbs + #content {
+            // make sure that margin is same as on modal window
+            margin-left: 20px !important;
+        }
+        .colM {
+            box-shadow: none;
+            > p {
+                @include icon(trash);
+                margin-top: -5px;
+                margin-bottom: 0;
+                &:before {
+                    font-size: 40px;
+                }
+            }
+            &#content {
+                padding: 0 !important;
+            }
+            ul {
+                margin: 10px -20px 0;
+                li {
+                    padding: 10px 0 10px 20px;
+                }
+                ul {
+                    margin: 10px 0 -10px -20px;
+                    li {
+                        padding: 10px 0 10px 20px;
+                    }
+                    ul {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    ul.messagelist + #content {
+        margin-top: 90px !important;
+    }
+    // resets margin top of content if messagelist is empty #244
+    ul.messagelist:empty + #content {
+        margin-top: 20px !important;
+    }
+    .well-wrapper {
+        margin-bottom: 20px;
+    }
+}
+
+.cms-admin-modal {
+    #header,
+    .breadcrumbs {
+        // there is no need for breadcrumbs and header on modal windows #242
+        display: none;
+    }
+    &.change-list #changelist {
+        // make sure that changelist doesn't overlap object-tools #242
+        margin-top: 50px;
+        #changelist-filter {
+            // adds z-index of 2000 because page tree has z-index of 1000 #242
+            z-index: 2000;
+            // needs a background color because filter is positioned absolute and appears over page tree #242
+            background-color: $white !important;
+        }
+    }
+}
+
+// resets form and background styles in dialog window #186
+.cms-dialog {
+    background-color: $white;
+    form {
+        background: none;
+        box-shadow: none;
+    }
+    .submit-row {
+        margin: 10px -20px 0;
+        input {
+            margin-left: 0;
+        }
+    }
+}

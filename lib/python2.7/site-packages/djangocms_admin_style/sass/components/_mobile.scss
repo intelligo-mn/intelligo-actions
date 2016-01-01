@@ -1,0 +1,403 @@
+//##############################################################################
+// MOBILE
+
+// base
+html,
+body {
+    height: auto;
+    #container {
+        // fixes content alignment on mobile view #152
+        min-width: 0 !important;
+        margin: 0;
+    }
+}
+
+#content {
+    margin: 160px 10px 0;
+    h1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+#branding {
+    #site-name {
+        display: none;
+    }
+}
+.login #branding {
+    display: block;
+}
+#user-tools {
+    position: relative;
+    text-align: center;
+}
+
+// general
+.module {
+    padding: 5px 0 5px 0 !important;
+    border: none;
+    box-shadow: none !important;
+    caption {
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+}
+div.breadcrumbs {
+    padding-left: 5px;
+}
+.plugin-holder {
+    display: none !important;
+}
+
+// login
+body.login {
+    #container {
+        width: 90% !important;
+        max-width: 320px;
+        min-width: inherit !important;
+        margin-top: 100px;
+    }
+}
+
+//filebrowser
+.filebrowser #container #content-related {
+    overflow: hidden;
+    float: none;
+    width: 100%;
+    margin-right: 0;
+}
+.filebrowser .clipboard,
+.filebrowser.change-list #changelist{
+    float: none !important;
+    width: 100% !important;
+}
+.filebrowser #content-top-bar .object-tools {
+    float: right !important;
+}
+.filebrowser #changelist {
+    margin-bottom: 20px;
+    #changelist-wrapper {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    .paginator {
+        width: calc(100% - #{$paginator-padding * 2}) !important;
+    }
+    .clipboard {
+        margin-top: 60px !important
+    }
+}
+
+
+// dashboard
+#content.colMS {
+    margin-right: 3% !important;
+}
+.dashboard {
+    #container {
+        #content h1 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #content-main {
+            float: none;
+            min-width: 0;
+            max-width: none;
+            .module {
+                table td {
+                    padding-left: 0;
+                }
+            }
+        }
+        #content-related {
+            position: static;
+            float: none;
+            width: auto;
+            margin: 0 -3%;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            border-left: 0;
+        }
+        #content-related .module {
+            margin: 10px 0;
+            padding: 3% !important;
+            .actionlist {
+                margin-left: 10px;
+            }
+        }
+    }
+    .module {
+        background: none !important;
+    }
+    caption {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+}
+
+.object-tools {
+    float: left;
+    max-width: 100% !important;
+    li {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+// changelist
+.change-list,
+.change-form {
+    #content {
+        .object-tools {
+            overflow: hidden;
+            float: none;
+            margin: 0;
+            li {
+                padding-left: 0;
+                margin-left: 0;
+            }
+        }
+    }
+    #changelist {
+        position: static;
+        .actions {
+            select {
+                // make sure that actions go button appears next to actions select field #242
+                max-width: 215px !important;
+            }
+            .action-counter {
+                display: block !important;
+            }
+        }
+        #toolbar {
+            float: none !important;
+            padding-left: 0 !important;
+            margin-right: 0 !important;
+            label {
+                display: inline-block;
+            }
+            form #searchbar {
+                // make sure that search button appears next to search input field #242
+                max-width: 215px !important;
+            }
+            .small {
+                display: block;
+            }
+        }
+    }
+    .filtered .results,
+    #changelist.filtered .paginator,
+    .filtered #toolbar,
+    #changelist.filtered .results,
+    #changelist.filtered div.xfull,
+    #changelist.filtered .actions {
+        margin-right: 0 !important;
+    }
+    #changelist .paginator,
+    #changelist.filtered .paginator {
+        width: calc(100% - #{$paginator-padding * 2} - 6% - 10px) !important;
+    }
+    .module #changelist-form .results {
+        overflow: auto;
+        width: 100%;
+    }
+    #changelist-search {
+        max-width: none;
+        input[type="submit"] {
+            margin-right: 10px;
+        }
+    }
+    .filtered {
+        .actions,
+        .paginator {
+            margin-right: 0 !important;
+        }
+        .actions {
+            padding-left: 0 !important;
+        }
+        .action-counter {
+            margin-left: 0 !important;
+        }
+    }
+    #changelist {
+        .actions,
+        .paginator {
+            margin-right: 0 !important;
+        }
+    }
+}
+#changelist-filter-button,
+#changelist-filter {
+    display: none !important;
+}
+.tree {
+    background: white;
+}
+
+// chageform
+.change-form {
+    h1 {
+        margin-left: 0;
+    }
+}
+
+// nani/hvad language buttons
+.nani-language-tabs {
+    > span {
+        font-size: 11px !important;
+        padding: 4px 1px !important;
+        a {
+            padding: 3px 5px !important;
+        }
+        .deletelink {
+            right: 0 !important;
+        }
+    }
+    > .current {
+        padding: 4px 10px 4px 5px !important;
+        .deletelink {
+            right: -8px !important;
+        }
+    }
+}
+
+// forms
+form label,
+.aligned label {
+    display: block;
+    float: none !important;
+    line-height: $font-size-normal;
+    width: auto;
+    margin-top: 5px;
+    padding: 0 !important;
+}
+form {
+    input,
+    input[type="file"],
+    textarea,
+    select {
+        width: auto;
+    }
+    .vTextField {
+        width: auto;
+    }
+    .aligned p,
+    .aligned ul {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+    // make sure that submit buttons are positioned correct on mobile #153
+    .submit-row {
+        text-align: left;
+        .deletelink-box {
+            float: none;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        input {
+            display: block;
+            float: none;
+            margin-bottom: 10px !important;
+            margin-left: 0;
+        }
+    }
+}
+
+// inlines
+.inline-group {
+    margin-bottom: 10px;
+    padding: 5px;
+    .module {
+        h2 {
+            padding-left: 5px;
+        }
+    }
+}
+
+// filter horizontal m2m
+.selector {
+    // displays selector multiple inputs belong to each other
+    float: none;
+    width: auto;
+    .selector-available,
+    .selector-chosen {
+        // displays selector multiple inputs belong to each other
+        float: none;
+        width: auto;
+        margin-bottom: 0;
+        p {
+            text-align: center;
+        }
+    }
+    ul.selector-chooser {
+        // displays selector multiple inputs belong to each other
+        float: none;
+        display: block;
+        // horizontally center chooser on mobile view #228
+        width: 100% !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    select[multiple],
+    select {
+        width: 100%;
+        max-width: none;
+    }
+    label {
+        display: inline-block;
+    }
+    .selector-available input,
+    .selector-chosen input {
+        width: auto;
+    }
+}
+
+//sideframe
+.cms-admin-sideframe {
+    &.change-list #changelist .paginator,
+    &.change-list #changelist.filtered .paginator,
+    &.change-form #changelist .paginator,
+    &.change-form #changelist.filtered .paginator {
+        // make sure that paginator has same width as changelist #228
+        width: calc(100% - #{$paginator-padding * 2} - 6%) !important;
+    }
+}
+
+// shortcuts
+.admin_shortcuts {
+    margin: 46px 3% 0 3%;
+}
+.admin_shortcuts .shortcuts li a {
+    padding: 10px 10px 10px 40px;
+    background-size: 20px 20px;
+}
+.admin_shortcuts .shortcuts li a span {
+    padding: 0 !important;
+}
+
+// icons
+a.selector-clearall,
+.selector-remove {
+    @include icon(chevron-circle-up);
+}
+a.selector-chooseall,
+.selector-add {
+    @include icon(chevron-circle-down);
+}
+
+//modal window
+.cms-admin-modal,
+.cms_modal-window,
+.popup {
+    &.change-list #changelist.filtered #changelist-form {
+       width: 100% !important;
+    }
+    &.change-form #changelist .paginator,
+    &.change-form #changelist.filtered .paginator,
+    &.change-list #changelist .paginator,
+    &.change-list #changelist.filtered .paginator {
+        width: calc(100% - 30px - 40px)!important;
+    }
+}

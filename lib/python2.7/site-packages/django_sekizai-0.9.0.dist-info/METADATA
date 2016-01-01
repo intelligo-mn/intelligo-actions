@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: django-sekizai
+Version: 0.9.0
+Summary: Django Sekizai
+Home-page: http://github.com/ojii/django-sekizai
+Author: Jonas Obrist
+Author-email: ojiidotch@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: django-classy-tags (>=0.3.1)
+
+UNKNOWN
+
+

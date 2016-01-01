@@ -1,0 +1,1 @@
+https://github.com/divio/django-formtools/archive/master.zip#egg=django-formtools
