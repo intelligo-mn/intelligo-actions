@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'udemy_lesson.urls'
+ROOT_URLCONF = 'homepage.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'udemy_lesson.wsgi.application'
+WSGI_APPLICATION = 'homepage.wsgi.application'
 
 
 # Database
