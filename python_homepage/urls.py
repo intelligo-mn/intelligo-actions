@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from blog.views import HelloTemplate
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^hello/$', 'blog.views.hello')
+    url(r'^hello/$', 'blog.views.hello'),
+    url(r'^hello_template/$', 'blog.views.hello_template'),
+    url(r'^hello_class_view/$', HelloTemplate.as_view()),
+    
 ]
+
+
