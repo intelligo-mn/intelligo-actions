@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> fdfb010a6fef0bb0b8a05665b59e1d38b94d3e6c
      ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
@@ -11,8 +14,13 @@ Welcome to your Django project on Cloud9 IDE!
 
 Your Django project is already fully setup. Just click the "Run" button to start
 the application. On first run you will be asked to create an admin user. You can
+<<<<<<< HEAD
 access your application from 'https://python-homepage-tortuvshin.c9users.io/' and the admin page from 
 'https://python-homepage-tortuvshin.c9users.io/admin'.
+=======
+access your application from 'https://udemy-lesson-tortuvshin-1.c9users.io/' and the admin page from 
+'https://udemy-lesson-tortuvshin-1.c9users.io/admin'.
+>>>>>>> fdfb010a6fef0bb0b8a05665b59e1d38b94d3e6c
 
 ## Starting from the Terminal
 
@@ -34,4 +42,11 @@ You may also want to follow the Django tutorial to create your first application
 https://docs.djangoproject.com/en/1.8/intro/tutorial01/
 
 Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE.
+<<<<<<< HEAD
 To watch some training videos, visit http://www.youtube.com/user/c9ide
+=======
+To watch some training videos, visit http://www.youtube.com/user/c9ide
+=======
+# python-homepage
+>>>>>>> 1b1cb4e34396be871af0a9dcc82ec71f1bc1f1ad
+>>>>>>> fdfb010a6fef0bb0b8a05665b59e1d38b94d3e6c
