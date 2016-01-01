@@ -42,13 +42,23 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'south',
     'cms',
     'mptt',
-    'sekazai',
     'menus',
+    'south',
+    'sekazai',
     
     'cms.plugins.txt',
+    'cms.plugins.file',
+    'cms.plugins.flash',
+    'cms.plugins.googlemap',
+    'cms.plugins.link',
+    'cms.plugins.picture',
+    'cms.plugins.snippet',
+    'cms.plugins.teaser',
+    'cms.plugins.text',
+    'cms.plugins.video',
+    'cms.plugins.twitter',
 )
 
 MIDDLEWARE_CLASSES = (
