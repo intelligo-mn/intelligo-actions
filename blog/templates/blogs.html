@@ -1,3 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if blogs.count > 0 %}
 
 {% for blog in blogs %}
 <div>
@@ -8,4 +13,13 @@
     <p>{{blog.body|lower|truncatewords:"10"}}</p>
 </div>
 {% endfor %}
+
+{% else %}
+
+<p>None to show!</p>
+
+{% endif %}
+
+{% endblock %}
+
     
