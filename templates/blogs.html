@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>
+            Blogs
+        </h1>
+        {% for blog in blogs %}
+        <div>
+            <h2><a href="/blogs/get/{{ blog.id }}/">
+                {{blog.title}}    
+            </a>
+            </h2>
+            <p>{{blog.body}}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
+    
