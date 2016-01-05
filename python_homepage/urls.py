@@ -26,6 +26,8 @@ urlpatterns = [
     url(r'^accounts/logout/$', 'python_homepage.views.logout'),
     url(r'^accounts/loggedin/$', 'python_homepage.views.loggedin'),
     url(r'^accounts/invalid/$', 'python_homepage.views.invalid_login'),
+    url(r'^accounts/register/$', 'python_homepage.views.register_user'),
+    url(r'^accounts/register_success/$', 'python_homepage.views.register_success'),
 
 ]
 

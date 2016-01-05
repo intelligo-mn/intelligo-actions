@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h2>Бүртгүүлэх</h2>
+    <form action="/accounts/register/" method="POST">{% csrf_token %}
+        
+        {{form}}
+        
+        <input type="submit" value="Бүртгүүлэх"/>
+    </form>
+
+{% endblock %}
