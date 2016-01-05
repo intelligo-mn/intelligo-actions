@@ -20,6 +20,12 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^blogs/', include('blog.urls')),
+    
+    url(r'^accounts/login/$', 'python_homepage.views.login'),
+    url(r'^accounts/auth/$', 'python_homepage.views.auth_view'),
+    url(r'^accounts/logout/$', 'python_homepage.views.logout'),
+    url(r'^accounts/loggedin/$', 'python_homepage.views.loggedin'),
+    url(r'^accounts/invalid/$', 'python_homepage.views.invalid_login'),
 
 ]
 
