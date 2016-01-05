@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -41,6 +43,7 @@
             </div>
             <div id = "content">
                 {% block content %}{% endblock %}
+                <img src="{% static "assets/images/images.jpg" %}"></img>
             </div>
         </div>
     </body>

@@ -26,6 +26,7 @@ SECRET_KEY = '3*a76)5*d0%6#os(rovf0)=gaa3a8a-hiud)*6c*xf+6^yrm)f'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
@@ -92,7 +93,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Asia/Ulaanbaatar'
 
 USE_I18N = True
 
@@ -105,3 +106,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+STATICFILES_DIRS = (
+    ("assets", os.path.join(BASE_DIR, '/static/')),
+)
