@@ -10,7 +10,7 @@
 
 {% block content %}
 
-    <form action="/blogs/create/" method="POST">{% csrf_token %}
+    <form action="/blogs/create/" method="post">{% csrf_token %}
         <ul>
             {{form.as_ul}}
         </ul>

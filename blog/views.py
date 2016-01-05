@@ -46,7 +46,7 @@ def create(request):
     
         args = {}
         args.update(csrf(request))
-        args['form'] = form
+        args['form'] = form 
         
         return render_to_response('create_blog.html', args)
     

@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{% block sidebar %}
+    
+    <ul>
+        <li><a href="/blogs/all">Мэдээ</a></li>
+        <li><a href="/blogs/create">Мэдээ нэмэх</a></li>
+    </ul>
+
+{% endblock %}
+
 {% block content %}
 
 <h2>Language is: {{language}}</h2>
