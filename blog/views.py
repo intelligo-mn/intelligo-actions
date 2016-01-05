@@ -6,6 +6,9 @@ from django.template import Context
 from django.shortcuts import render_to_response
 from django.views.generic.base import TemplateView
 from blog.models import Blog
+from forms import BlogForm
+from django.http import HttpResponseRedirect
+from django.core.context_processors import csrf
 
 def blogs(request):
     language = 'eng-gb'
@@ -32,6 +35,19 @@ def language(request, language='en-gb'):
     return response
     
     
+def create(request):
+    if request.POST:
+        form = BlogForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/blogs/all')
+        else:
+            form = BlogForm()
     
+        args = {}
+        args.update(csrf(request))
+        args['form'] = form
+        
+        return render_to_response('create_blog.html', args)
     
     
