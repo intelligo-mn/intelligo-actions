@@ -18,9 +18,9 @@ from django.contrib import admin
 
 
 urlpatterns = [
+    url(r'^$', 'blog.views.blogs'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^blogs/', include('blog.urls')),
-    
     url(r'^accounts/login/$', 'python_homepage.views.login'),
     url(r'^accounts/auth/$', 'python_homepage.views.auth_view'),
     url(r'^accounts/logout/$', 'python_homepage.views.logout'),
@@ -28,7 +28,6 @@ urlpatterns = [
     url(r'^accounts/invalid/$', 'python_homepage.views.invalid_login'),
     url(r'^accounts/register/$', 'python_homepage.views.register_user'),
     url(r'^accounts/register_success/$', 'python_homepage.views.register_success'),
-
 ]
 
 
