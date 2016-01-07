@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block sidebar %}
+    
+    <ul>
+        <li><a href="/blogs/create">Мэдээ нэмэх</a></li>
+    </ul>
+
+{% endblock %}
+
 {% block content %}
 
 <h1>{{blog.title}}</h1>
