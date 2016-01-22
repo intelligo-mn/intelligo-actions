@@ -8,6 +8,13 @@
             body{
                 text-align:center;
             }
+            .menu {
+                list-style-type: none;
+            }
+            .sub_menu {
+                float: left;
+                margin: 5px 5px 5px 5px;
+            }
             
             #page {
                 width:960px;
@@ -31,6 +38,14 @@
         </style>
     </head>
     <body>
+        <div class="header_nav">
+            <ul class="menu">
+                <li class="sub_menu"><a href="#">Home</a></li>
+                <li class="sub_menu"><a href="#">Home</a></li>
+                <li class="sub_menu"><a href="#">Home</a></li>
+                <li class="sub_menu"><a href="#">Home</a></li>
+            </ul>
+        </div>
         <div id = "page">
             <div id = "sidebar">
                 {% block sidebar %}

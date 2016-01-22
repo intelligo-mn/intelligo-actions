@@ -34,7 +34,6 @@ def language(request, language='en-gb'):
     request.session['lang'] = language
     return response
     
-    
 def create(request):
     if request.POST:
         form = BlogForm(request.POST)
