@@ -2,7 +2,9 @@ name: 'Intelligo Actions'
 description: 'Github actions for Intelligo Systems.'
 author: 'Intelligo Systems'
 inputs:
-  packages: '["my-package"]'
+  packages: 
+    description: 'Version Spec of the version to use.  Examples: 10.x, 10.15.1, >=10.15.0'
+    default: 'intelligo'
 runs:
   using: 'node12'
   main: 'dist/index.js'
