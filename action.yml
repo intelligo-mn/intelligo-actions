@@ -1,10 +1,11 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Intelligo Actions'
+description: 'Github actions for Intelligo Systems.'
+author: 'Intelligo Systems'
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+  packages: '["my-package"]'
 runs:
   using: 'node12'
   main: 'dist/index.js'
+branding:
+  icon: alert-circle
+  color: gray-dark

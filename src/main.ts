@@ -1,19 +1,20 @@
-import * as core from '@actions/core'
-import {wait} from './wait'
+import * as core from "@actions/core";
+import { execute } from "./execute";
 
 async function run(): Promise<void> {
   try {
-    const ms: string = core.getInput('milliseconds')
-    core.debug(`Waiting ${ms} milliseconds ...`)
+    const packages: string[] = JSON.parse(
+      core.getInput("packages", { required: true })
+    );
 
-    core.debug(new Date().toTimeString())
-    await wait(parseInt(ms, 10))
-    core.debug(new Date().toTimeString())
-
-    core.setOutput('time', new Date().toTimeString())
+    packages.forEach(pack => {
+      core.debug(`Installing ${pack} ...`);
+      execute(`npm install -g ${pack}`);
+      core.debug("Done...");
+    });
   } catch (error) {
-    core.setFailed(error.message)
+    core.setFailed(error.message);
   }
 }
 
-run()
+run();
