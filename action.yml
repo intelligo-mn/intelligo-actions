@@ -7,5 +7,5 @@ runs:
   using: 'node12'
   main: 'dist/index.js'
 branding:
-  icon: alert-circle
-  color: gray-dark
+  icon: activity
+  color: purple
