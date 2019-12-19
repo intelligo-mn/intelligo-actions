@@ -19,13 +19,12 @@ Run the tests :heavy_check_mark:
 ```bash
 $ npm test
 
-...
 ```
 
 ## Usage:
 
 ```yaml
-uses: intelligo-systems/typescript-action@v1
+uses: intelligo-systems/intelligo-actions@v1
 with:
-  milliseconds: 1000
+  packages: '["my-package"]'
 ```
