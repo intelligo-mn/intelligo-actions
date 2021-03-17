@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/intelligo-systems/intelligo-actions.git"
+    "url": "git+https://github.com/intelligo-mn/intelligo-actions.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "Intelligo Systems",
+  "author": "Intelligo",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.0"
