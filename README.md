@@ -24,7 +24,7 @@ $ npm test
 ## Usage:
 
 ```yaml
-uses: intelligo-systems/intelligo-actions@v1
+uses: intelligo-mn/intelligo-actions@v1
 with:
   packages: '["my-package"]'
 ```
